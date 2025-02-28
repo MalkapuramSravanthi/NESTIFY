@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Pets</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Nestify</div>
+      <ul>
+        <li><a href="../../homepage/3pages/html.html">Home Page</a></li>
+        <li><a href="#">Adopt Orphans</a></li>
+        <li><a href="#">Adopt Pets</a></li>
+        <li><a href="#">Seek Elderly</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="user">
+        <img src="sanjuna.jpg" alt="Profile Picture">
+        <span>sanjuna</span>
+    </div>
+    
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" placeholder="Search...">
+      <button>🔍</button>
+    </section>
+
+    <section class="cards">
+    
+
+      <div class="card" onclick="showPetModal('Charlie', 'Cockatiel', '01/02/22', 'Bird Paradise Shelter')">
+        <img src="charlie.jpg" alt="Charlie">
+        <h3>Charlie</h3>
+        <p>Breed: Cockatiel</p>
+        <p>DOB: 01/02/22</p>
+        <p>Shelter: Bird Paradise Shelter</p>
+      </div>
+    </section>
+
+    <div id="pet-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closePetModal()">&times;</span>
+        <h3>Connect with Shelter to show interest</h3>
+        <p id="pet-details"></p>
+        <div class="modal-actions">
+          <button onclick="closePetModal()">Cancel</button>
+          <button>Confirm</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-actions button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modal-actions button:first-child {
+  background: #ddd;
+}
+
+.modal-actions button:last-child {
+  background: #4CAF50;
+  color: white;
+}
+
+
+nav ul li a {
+  color: black; 
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; 
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+nav ul li a:active,
+nav ul li a:focus {
+  color: #FF6347; 
+}
+
+nav ul li a.current {
+  color: #4CAF50; 
+  font-weight: bold;
+}
+.user {
+  display: flex; /* Aligns the image and text horizontally */
+  align-items: center; /* Centers them vertically */
+  gap: 10px; /* Adds spacing between the image and text */
+  padding: 10px; /* Adds some inner spacing */
+  border: 1px solid #ccc; /* Adds a light border */
+  border-radius: 8px; /* Rounds the edges of the container */
+  background-color: #f9f9f9; /* Sets a light background */
+  max-width: 300px; /* Optional: limits the container width */
+  margin: 10px auto; /* Optional: centers the container horizontally */
+}
+
+.user img {
+  width: 50px; /* Sets the size of the profile picture */
+  height: 50px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image scales properly within the circle */
+  border: 2px solid #007bff; /* Adds a border to the profile picture */
+}
+
+.user span {
+  font-size: 16px; /* Sets the font size for the username */
+  font-weight: bold; /* Makes the username bold */
+  color: #333; /* Sets the color of the username */
+  font-family: Arial, sans-serif; /* Defines the font family */
+}
